@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/contacts_list_height">
+
+
+    <!--Miejsce na awatar-->
+    <ImageView android:layout_width="50dp"
+               android:layout_height="match_parent"
+               app:srcCompat="@android:drawable/stat_notify_chat"
+               android:id="@+id/imageView"
+               android:background="@color/colorPrimary"
+               android:contentDescription="@string/avatar"
+    />
+
+    <LinearLayout android:orientation="vertical"
+                  android:layout_height="@dimen/contacts_list_height"
+                  android:layout_alignParentBottom="true"
+                  android:layout_alignParentTop="true"
+                  android:layout_toEndOf="@+id/imageView"
+                  android:layout_toStartOf="@+id/last_message_date"
+                  android:paddingStart="8dp"
+                  android:paddingEnd="4dp"
+                  android:layout_width="match_parent">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:id="@+id/contacts_name"
+                  tools:text="Franek Kimono Franek Kimono Franek Kimono Franek Kimono Franek Kimono Franek Kimono Franek Kimono"
+                  android:maxLines="1"
+                  android:textStyle="bold"
+                  android:gravity="bottom"
+
+        />
+
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                    android:layout_weight="1"
+                  android:id="@+id/last_message"
+                  tools:text="Bla bla ble"
+                  android:maxLines="1"
+                  android:gravity="top"
+        />
+
+    </LinearLayout>
+
+    <TextView android:layout_width="50dp"
+              android:layout_height="@dimen/contacts_list_height"
+              android:id="@+id/last_message_date"
+              tools:text="wczoraj"
+              android:layout_alignParentEnd="true"
+              android:gravity="center_vertical"
+    />
+
+</RelativeLayout>
