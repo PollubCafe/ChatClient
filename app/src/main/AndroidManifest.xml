@@ -27,10 +27,11 @@
         <activity
             android:name=".Contacts.ContactsActivity"
             android:exported="true"
-            android:label="@string/contacts_name"></activity>
+            android:label="@string/contacts_name" />
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity android:name=".RegistrationActivity"></activity>
     </application>
 
 </manifest>
